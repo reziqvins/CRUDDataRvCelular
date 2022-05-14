@@ -2,29 +2,34 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <title>Tambah</title>
 </head>
 <body>
+<?php include ('header.php');?>
+
     <div class="container">
         <div class="card mt-3">
         <form method="post" action="tambahproses.php" >
             <div class="card-body shadow" style="margin:auto;" >
                 <h3 class="text-center"><b>Tambah Data</b></h3>
             <div class="form-group">
-                <label for="nama_merk">nama merk</label>
+                <label for="nama_merk">Nama Merk</label>
                 <input type="text" class="form-control" id="nama_merk"  name="nama" placeholder="masukan merk" required>
             </div>
             <div class="form-group">
-                <label for="tipe">tipe</label>
+                <label for="tipe">Tipe</label>
                 <select class="form-control" name="tipe" id="tipe" required>
-                    <option value="entry">entry level</option>
-                    <option value="mid">mid level</option>
-                    <option value="flagship">flaghsip</option>
-                    <option value="Komputer">Komputer</option>
+                    <option value="Entry Level">entry level</option>
+                    <option value="Mid Range">mid Range</option>
+                    <option value="high End">High end</option>
+                    <option value="flaghsip">Flagship</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="tahun">tahun</label>
+                <label for="tahun">Tahun Produksi</label>
                 <input type="text" class="form-control" id="tahun" name="tahun" placeholder="masukan tahun" required>
             </div>
             <div class="form-group">
@@ -38,5 +43,6 @@
         </form>
         </div>
     </div>
+    <?php include ('footer.php');?>
 </body>
 </html>

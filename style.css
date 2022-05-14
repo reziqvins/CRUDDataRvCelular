@@ -1,0 +1,84 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+	padding:0;
+	margin:0;
+}
+/*header*/
+
+
+.navbar h3 span{
+	color:  #e0ac1c;
+}
+.navbar h3{
+	color: #ffffff;
+}
+
+.navbar{
+	background-color: #2c292f;
+	
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+body{
+    background-color:#969399;
+}
+
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:900px){
+	footer { position: static; }
+	header { padding-top:20px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: bold 16px sans-serif;
+	padding: 20px 20px 60px 50px;
+	margin-top: 80px;
+}
+
+
+.footer-distributed .footer-center{
+	width: auto;
+    height:auto;
+    text-align: center;
+    vertical-align: middle;
+	margin: 1px,31px;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+
+
+.footer-distributed h3 span{
+	color:  #e0ac1c;
+}
+
+.company{
+
+
+}
+
+.company .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	margin-top: 30px;
+	background-color: #000000;
+}

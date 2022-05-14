@@ -8,15 +8,22 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+ 
     <title>Home</title>
 </head>
 <body>
+    <?php include ('header.php');?>
     <div class="container">
         <div class="card mt-5">
             <div class="card-body shadow" style="margin-auto;">
                 <a href="tambahdata.php" class="btn btn-primary" >Tambah</a>
                 <h3 class="text-center"><b>Daftar Data HP</b></h3>
-                <table class="table table-success table-striped">
+                <table class="table table-striped">
+
                     <thead>
                         <tr>
                             <td>No</td>
@@ -46,6 +53,8 @@
                 </table>
             </div>
         </div>
-    </div>4
-</body>
+    </div>
+
+    <?php include('footer.php'); ?>
+	</body>
 </html>
